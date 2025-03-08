@@ -22,7 +22,7 @@ public class CalculatorJTest {
     @Test
     public void testDivide()
     {
-        assertThatThrownBy(() -> calculatorUT.divide(2,2))
+        assertThatThrownBy(() -> calculatorUT.divide(2,0))
                 .isInstanceOf(ArithmeticException.class)
                 .hasMessage("Divide by zero");
     }
